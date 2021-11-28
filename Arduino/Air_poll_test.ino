@@ -1,7 +1,3 @@
-/* 20210728 할 일
- * 와이파이 연구
- */
-
 #include <MQUnifiedsensor.h>
 #include "MQ131.h"
 #include <pm2008_i2c.h>
