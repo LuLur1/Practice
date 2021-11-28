@@ -20,8 +20,8 @@ int main(void)
 	int weight_select = rand() % 2;
 	sink[sink_select] += weight[weight_select];
 
-	cout << "·£´ýÇÑ Ãß°¡ °áÁ¤µÇ¾ú½À´Ï´Ù." << endl;
-	cout << "===== Á¤´ä ¹Ì¸®º¸±â =====" << endl;
+	cout << "ëžœë¤í•œ ì¶”ê°€ ê²°ì •ë˜ì—ˆìŠµë‹ˆë‹¤." << endl;
+	cout << "===== ì •ë‹µ ë¯¸ë¦¬ë³´ê¸° =====" << endl;
 
 	for (int i = 0; i < 12; i++)
 	{
@@ -35,39 +35,39 @@ int main(void)
 		rightSide = 0;
 		leftSide = 0;
 
-		cout << "¿ÞÂÊ ¹«°Ô¸¦ Àê ÃßÀÇ ¼ö °áÁ¤ÇØÁÖ¼¼¿ä(ÃßÀÇ °³¼ö) >> ";
+		cout << "ì™¼ìª½ ë¬´ê²Œë¥¼ ìž´ ì¶”ì˜ ìˆ˜ ê²°ì •í•´ì£¼ì„¸ìš”(ì¶”ì˜ ê°œìˆ˜) >> ";
 		cin >> left;
 
-		cout << "¿ÞÂÊ ¹«°Ô¸¦ Àê Ãß¸¦ °áÁ¤ÇØÁÖ¼¼¿ä." << endl;
+		cout << "ì™¼ìª½ ë¬´ê²Œë¥¼ ìž´ ì¶”ë¥¼ ê²°ì •í•´ì£¼ì„¸ìš”." << endl;
 		for (int i = 0; i < left; i++)
 		{
-			cout << "¿ÞÂÊ " << i + 1 << "¹øÂ° Ãß >> ";
+			cout << "ì™¼ìª½ " << i + 1 << "ë²ˆì§¸ ì¶” >> ";
 			cin >> num;
 
 			leftSide += sink[num - 1];
 		}
 
-		cout << "¿À¸¥ÂÊ ¹«°Ô¸¦ Àê ÃßÀÇ ¼ö °áÁ¤ÇØÁÖ¼¼¿ä(ÃßÀÇ °³¼ö) >> ";
+		cout << "ì˜¤ë¥¸ìª½ ë¬´ê²Œë¥¼ ìž´ ì¶”ì˜ ìˆ˜ ê²°ì •í•´ì£¼ì„¸ìš”(ì¶”ì˜ ê°œìˆ˜) >> ";
 		cin >> right;
 
-		cout << "¿À¸¥ÂÊ ¹«°Ô¸¦ Àê Ãß¸¦ °áÁ¤ÇØÁÖ¼¼¿ä." << endl;
+		cout << "ì˜¤ë¥¸ìª½ ë¬´ê²Œë¥¼ ìž´ ì¶”ë¥¼ ê²°ì •í•´ì£¼ì„¸ìš”." << endl;
 		for (int i = 0; i < right; i++)
 		{
-			cout << "¿À¸¥ÂÊ " << i + 1 << "¹øÂ° Ãß >> ";
+			cout << "ì˜¤ë¥¸ìª½ " << i + 1 << "ë²ˆì§¸ ì¶” >> ";
 			cin >> num;
 
 			rightSide += sink[num - 1];
 		}
 
-		cout << endl << "°á°ú : ";
+		cout << endl << "ê²°ê³¼ : ";
 
 		if (leftSide > rightSide)
-			cout << "¿ÞÂÊÀ¸·Î ±â¿ï¾ú´Ù!" << endl;
+			cout << "ì™¼ìª½ìœ¼ë¡œ ê¸°ìš¸ì—ˆë‹¤!" << endl;
 
 		else if (leftSide < rightSide)
-			cout << "¿À¸¥ÂÊÀ¸·Î ±â¿ï¾ú´Ù!" << endl;
+			cout << "ì˜¤ë¥¸ìª½ìœ¼ë¡œ ê¸°ìš¸ì—ˆë‹¤!" << endl;
 
-		else cout << "º¯ÇÔ¾ø´Ù!" << endl;
+		else cout << "ë³€í•¨ì—†ë‹¤!" << endl;
 
 		Sleep(3000);
 		system("cls");
@@ -75,15 +75,15 @@ int main(void)
 
 	while (1)
 	{
-		cout << "Á¤´ä Ãß¸¦ °ñ¶óÁÖ¼¼¿ä >> ";
+		cout << "ì •ë‹µ ì¶”ë¥¼ ê³¨ë¼ì£¼ì„¸ìš” >> ";
 		cin >> answer;
 
 		if (sink[answer - 1] != 2)
 		{
-			cout << "Á¤´äÀÔ´Ï´Ù!" << endl;
+			cout << "ì •ë‹µìž…ë‹ˆë‹¤!" << endl;
 			return 0;
 		}
 
-		else cout << "¿À´äÀÔ´Ï´Ù!" << endl;
+		else cout << "ì˜¤ë‹µìž…ë‹ˆë‹¤!" << endl;
 	}
 }
